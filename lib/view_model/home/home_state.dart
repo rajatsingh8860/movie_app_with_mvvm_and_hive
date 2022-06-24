@@ -15,22 +15,5 @@ class HomeState with _$HomeState {
   factory HomeState.initial() =>
       const HomeState(movieModel: [], isLoading: false, errorText: '',query: '',isConnected: true,startFetching: false);
 
-  Map<String, dynamic> toMap() {
-    return {
-      'movieModel': movieModel,
-    };
-  }
-
-  factory HomeState.fromMap(Map<String, dynamic> map) {
-    // if (map == null) return null;
-
-    return HomeState(
-      movieModel: map['movieModel'],
-    );
-  }
-
- // String toJson() => json.encode(toMap());
-
-  // factory HomeState.fromJson(String source) =>
-  //     HomeState.fromMap(json.decode(source));
+  
 }
