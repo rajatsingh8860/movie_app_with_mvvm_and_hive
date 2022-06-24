@@ -7,6 +7,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:movie/app.dart';
 import 'package:movie/model/movie_model.dart';
 
 import 'firebase_options.dart';
@@ -23,6 +24,7 @@ Future<void> main() async {
       DeviceOrientation.portraitUp,
       DeviceOrientation.portraitDown,
     ]);
+    runApp(const App());
     await initFirebase();
    
   }, (error, stack) => FirebaseCrashlytics.instance.recordError(error, stack));

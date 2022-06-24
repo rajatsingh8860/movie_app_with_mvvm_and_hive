@@ -744,15 +744,14 @@ class __$HomeStateCopyWithImpl<$Res> extends _$HomeStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_HomeState extends _HomeState {
+class _$_HomeState implements _HomeState {
   const _$_HomeState(
       {required this.movieModel,
       this.isLoading = false,
       this.errorText = '',
       this.query = '',
       this.isConnected = true,
-      this.startFetching = false})
-      : super._();
+      this.startFetching = false});
 
   @override
   final List<MovieModel> movieModel;
@@ -816,7 +815,7 @@ class _$_HomeState extends _HomeState {
       __$HomeStateCopyWithImpl<_HomeState>(this, _$identity);
 }
 
-abstract class _HomeState extends HomeState {
+abstract class _HomeState implements HomeState {
   const factory _HomeState(
       {required List<MovieModel> movieModel,
       dynamic isLoading,
@@ -824,7 +823,6 @@ abstract class _HomeState extends HomeState {
       dynamic query,
       dynamic isConnected,
       dynamic startFetching}) = _$_HomeState;
-  const _HomeState._() : super._();
 
   @override
   List<MovieModel> get movieModel => throw _privateConstructorUsedError;

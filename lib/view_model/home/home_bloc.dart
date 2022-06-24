@@ -1,5 +1,5 @@
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:hydrated_bloc/hydrated_bloc.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
 import 'package:movie/model/home_repository.dart';
 import 'package:movie/model/movie_model.dart';
@@ -48,5 +48,13 @@ class HomeBloc extends Bloc<HomeEvent, HomeState>  {
     });
   }
 
- 
+  // @override
+  // HomeState? fromJson(Map<String, dynamic> json) {
+  //   return HomeState.fromMap(json);
+  // }
+
+  // @override
+  // Map<String, dynamic>? toJson(HomeState state) {
+  //   return state.toMap();
+  // }
 }
