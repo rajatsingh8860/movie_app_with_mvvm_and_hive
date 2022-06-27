@@ -31,8 +31,16 @@ class _$HomeEventTearOff {
     );
   }
 
-  CheckConnection checkConnection() {
-    return const CheckConnection();
+  _CheckConnection checkConnection() {
+    return const _CheckConnection();
+  }
+
+  _SortMovie sortMovie() {
+    return const _SortMovie();
+  }
+
+  _SortButtonClicked sortButtonClicked() {
+    return const _SortButtonClicked();
   }
 }
 
@@ -47,6 +55,8 @@ mixin _$HomeEvent {
     required TResult Function() fetchMovie,
     required TResult Function(String query) queryChanged,
     required TResult Function() checkConnection,
+    required TResult Function() sortMovie,
+    required TResult Function() sortButtonClicked,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -55,6 +65,8 @@ mixin _$HomeEvent {
     TResult Function()? fetchMovie,
     TResult Function(String query)? queryChanged,
     TResult Function()? checkConnection,
+    TResult Function()? sortMovie,
+    TResult Function()? sortButtonClicked,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -63,6 +75,8 @@ mixin _$HomeEvent {
     TResult Function()? fetchMovie,
     TResult Function(String query)? queryChanged,
     TResult Function()? checkConnection,
+    TResult Function()? sortMovie,
+    TResult Function()? sortButtonClicked,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -71,7 +85,9 @@ mixin _$HomeEvent {
     required TResult Function(_Started value) started,
     required TResult Function(_FetchMovie value) fetchMovie,
     required TResult Function(_QueryChanged value) queryChanged,
-    required TResult Function(CheckConnection value) checkConnection,
+    required TResult Function(_CheckConnection value) checkConnection,
+    required TResult Function(_SortMovie value) sortMovie,
+    required TResult Function(_SortButtonClicked value) sortButtonClicked,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -79,7 +95,9 @@ mixin _$HomeEvent {
     TResult Function(_Started value)? started,
     TResult Function(_FetchMovie value)? fetchMovie,
     TResult Function(_QueryChanged value)? queryChanged,
-    TResult Function(CheckConnection value)? checkConnection,
+    TResult Function(_CheckConnection value)? checkConnection,
+    TResult Function(_SortMovie value)? sortMovie,
+    TResult Function(_SortButtonClicked value)? sortButtonClicked,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -87,7 +105,9 @@ mixin _$HomeEvent {
     TResult Function(_Started value)? started,
     TResult Function(_FetchMovie value)? fetchMovie,
     TResult Function(_QueryChanged value)? queryChanged,
-    TResult Function(CheckConnection value)? checkConnection,
+    TResult Function(_CheckConnection value)? checkConnection,
+    TResult Function(_SortMovie value)? sortMovie,
+    TResult Function(_SortButtonClicked value)? sortButtonClicked,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -149,6 +169,8 @@ class _$_Started implements _Started {
     required TResult Function() fetchMovie,
     required TResult Function(String query) queryChanged,
     required TResult Function() checkConnection,
+    required TResult Function() sortMovie,
+    required TResult Function() sortButtonClicked,
   }) {
     return started();
   }
@@ -160,6 +182,8 @@ class _$_Started implements _Started {
     TResult Function()? fetchMovie,
     TResult Function(String query)? queryChanged,
     TResult Function()? checkConnection,
+    TResult Function()? sortMovie,
+    TResult Function()? sortButtonClicked,
   }) {
     return started?.call();
   }
@@ -171,6 +195,8 @@ class _$_Started implements _Started {
     TResult Function()? fetchMovie,
     TResult Function(String query)? queryChanged,
     TResult Function()? checkConnection,
+    TResult Function()? sortMovie,
+    TResult Function()? sortButtonClicked,
     required TResult orElse(),
   }) {
     if (started != null) {
@@ -185,7 +211,9 @@ class _$_Started implements _Started {
     required TResult Function(_Started value) started,
     required TResult Function(_FetchMovie value) fetchMovie,
     required TResult Function(_QueryChanged value) queryChanged,
-    required TResult Function(CheckConnection value) checkConnection,
+    required TResult Function(_CheckConnection value) checkConnection,
+    required TResult Function(_SortMovie value) sortMovie,
+    required TResult Function(_SortButtonClicked value) sortButtonClicked,
   }) {
     return started(this);
   }
@@ -196,7 +224,9 @@ class _$_Started implements _Started {
     TResult Function(_Started value)? started,
     TResult Function(_FetchMovie value)? fetchMovie,
     TResult Function(_QueryChanged value)? queryChanged,
-    TResult Function(CheckConnection value)? checkConnection,
+    TResult Function(_CheckConnection value)? checkConnection,
+    TResult Function(_SortMovie value)? sortMovie,
+    TResult Function(_SortButtonClicked value)? sortButtonClicked,
   }) {
     return started?.call(this);
   }
@@ -207,7 +237,9 @@ class _$_Started implements _Started {
     TResult Function(_Started value)? started,
     TResult Function(_FetchMovie value)? fetchMovie,
     TResult Function(_QueryChanged value)? queryChanged,
-    TResult Function(CheckConnection value)? checkConnection,
+    TResult Function(_CheckConnection value)? checkConnection,
+    TResult Function(_SortMovie value)? sortMovie,
+    TResult Function(_SortButtonClicked value)? sortButtonClicked,
     required TResult orElse(),
   }) {
     if (started != null) {
@@ -264,6 +296,8 @@ class _$_FetchMovie implements _FetchMovie {
     required TResult Function() fetchMovie,
     required TResult Function(String query) queryChanged,
     required TResult Function() checkConnection,
+    required TResult Function() sortMovie,
+    required TResult Function() sortButtonClicked,
   }) {
     return fetchMovie();
   }
@@ -275,6 +309,8 @@ class _$_FetchMovie implements _FetchMovie {
     TResult Function()? fetchMovie,
     TResult Function(String query)? queryChanged,
     TResult Function()? checkConnection,
+    TResult Function()? sortMovie,
+    TResult Function()? sortButtonClicked,
   }) {
     return fetchMovie?.call();
   }
@@ -286,6 +322,8 @@ class _$_FetchMovie implements _FetchMovie {
     TResult Function()? fetchMovie,
     TResult Function(String query)? queryChanged,
     TResult Function()? checkConnection,
+    TResult Function()? sortMovie,
+    TResult Function()? sortButtonClicked,
     required TResult orElse(),
   }) {
     if (fetchMovie != null) {
@@ -300,7 +338,9 @@ class _$_FetchMovie implements _FetchMovie {
     required TResult Function(_Started value) started,
     required TResult Function(_FetchMovie value) fetchMovie,
     required TResult Function(_QueryChanged value) queryChanged,
-    required TResult Function(CheckConnection value) checkConnection,
+    required TResult Function(_CheckConnection value) checkConnection,
+    required TResult Function(_SortMovie value) sortMovie,
+    required TResult Function(_SortButtonClicked value) sortButtonClicked,
   }) {
     return fetchMovie(this);
   }
@@ -311,7 +351,9 @@ class _$_FetchMovie implements _FetchMovie {
     TResult Function(_Started value)? started,
     TResult Function(_FetchMovie value)? fetchMovie,
     TResult Function(_QueryChanged value)? queryChanged,
-    TResult Function(CheckConnection value)? checkConnection,
+    TResult Function(_CheckConnection value)? checkConnection,
+    TResult Function(_SortMovie value)? sortMovie,
+    TResult Function(_SortButtonClicked value)? sortButtonClicked,
   }) {
     return fetchMovie?.call(this);
   }
@@ -322,7 +364,9 @@ class _$_FetchMovie implements _FetchMovie {
     TResult Function(_Started value)? started,
     TResult Function(_FetchMovie value)? fetchMovie,
     TResult Function(_QueryChanged value)? queryChanged,
-    TResult Function(CheckConnection value)? checkConnection,
+    TResult Function(_CheckConnection value)? checkConnection,
+    TResult Function(_SortMovie value)? sortMovie,
+    TResult Function(_SortButtonClicked value)? sortButtonClicked,
     required TResult orElse(),
   }) {
     if (fetchMovie != null) {
@@ -404,6 +448,8 @@ class _$_QueryChanged implements _QueryChanged {
     required TResult Function() fetchMovie,
     required TResult Function(String query) queryChanged,
     required TResult Function() checkConnection,
+    required TResult Function() sortMovie,
+    required TResult Function() sortButtonClicked,
   }) {
     return queryChanged(query);
   }
@@ -415,6 +461,8 @@ class _$_QueryChanged implements _QueryChanged {
     TResult Function()? fetchMovie,
     TResult Function(String query)? queryChanged,
     TResult Function()? checkConnection,
+    TResult Function()? sortMovie,
+    TResult Function()? sortButtonClicked,
   }) {
     return queryChanged?.call(query);
   }
@@ -426,6 +474,8 @@ class _$_QueryChanged implements _QueryChanged {
     TResult Function()? fetchMovie,
     TResult Function(String query)? queryChanged,
     TResult Function()? checkConnection,
+    TResult Function()? sortMovie,
+    TResult Function()? sortButtonClicked,
     required TResult orElse(),
   }) {
     if (queryChanged != null) {
@@ -440,7 +490,9 @@ class _$_QueryChanged implements _QueryChanged {
     required TResult Function(_Started value) started,
     required TResult Function(_FetchMovie value) fetchMovie,
     required TResult Function(_QueryChanged value) queryChanged,
-    required TResult Function(CheckConnection value) checkConnection,
+    required TResult Function(_CheckConnection value) checkConnection,
+    required TResult Function(_SortMovie value) sortMovie,
+    required TResult Function(_SortButtonClicked value) sortButtonClicked,
   }) {
     return queryChanged(this);
   }
@@ -451,7 +503,9 @@ class _$_QueryChanged implements _QueryChanged {
     TResult Function(_Started value)? started,
     TResult Function(_FetchMovie value)? fetchMovie,
     TResult Function(_QueryChanged value)? queryChanged,
-    TResult Function(CheckConnection value)? checkConnection,
+    TResult Function(_CheckConnection value)? checkConnection,
+    TResult Function(_SortMovie value)? sortMovie,
+    TResult Function(_SortButtonClicked value)? sortButtonClicked,
   }) {
     return queryChanged?.call(this);
   }
@@ -462,7 +516,9 @@ class _$_QueryChanged implements _QueryChanged {
     TResult Function(_Started value)? started,
     TResult Function(_FetchMovie value)? fetchMovie,
     TResult Function(_QueryChanged value)? queryChanged,
-    TResult Function(CheckConnection value)? checkConnection,
+    TResult Function(_CheckConnection value)? checkConnection,
+    TResult Function(_SortMovie value)? sortMovie,
+    TResult Function(_SortButtonClicked value)? sortButtonClicked,
     required TResult orElse(),
   }) {
     if (queryChanged != null) {
@@ -482,27 +538,27 @@ abstract class _QueryChanged implements HomeEvent {
 }
 
 /// @nodoc
-abstract class $CheckConnectionCopyWith<$Res> {
-  factory $CheckConnectionCopyWith(
-          CheckConnection value, $Res Function(CheckConnection) then) =
-      _$CheckConnectionCopyWithImpl<$Res>;
+abstract class _$CheckConnectionCopyWith<$Res> {
+  factory _$CheckConnectionCopyWith(
+          _CheckConnection value, $Res Function(_CheckConnection) then) =
+      __$CheckConnectionCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$CheckConnectionCopyWithImpl<$Res> extends _$HomeEventCopyWithImpl<$Res>
-    implements $CheckConnectionCopyWith<$Res> {
-  _$CheckConnectionCopyWithImpl(
-      CheckConnection _value, $Res Function(CheckConnection) _then)
-      : super(_value, (v) => _then(v as CheckConnection));
+class __$CheckConnectionCopyWithImpl<$Res> extends _$HomeEventCopyWithImpl<$Res>
+    implements _$CheckConnectionCopyWith<$Res> {
+  __$CheckConnectionCopyWithImpl(
+      _CheckConnection _value, $Res Function(_CheckConnection) _then)
+      : super(_value, (v) => _then(v as _CheckConnection));
 
   @override
-  CheckConnection get _value => super._value as CheckConnection;
+  _CheckConnection get _value => super._value as _CheckConnection;
 }
 
 /// @nodoc
 
-class _$CheckConnection implements CheckConnection {
-  const _$CheckConnection();
+class _$_CheckConnection implements _CheckConnection {
+  const _$_CheckConnection();
 
   @override
   String toString() {
@@ -511,7 +567,7 @@ class _$CheckConnection implements CheckConnection {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is CheckConnection);
+    return identical(this, other) || (other is _CheckConnection);
   }
 
   @override
@@ -524,6 +580,8 @@ class _$CheckConnection implements CheckConnection {
     required TResult Function() fetchMovie,
     required TResult Function(String query) queryChanged,
     required TResult Function() checkConnection,
+    required TResult Function() sortMovie,
+    required TResult Function() sortButtonClicked,
   }) {
     return checkConnection();
   }
@@ -535,6 +593,8 @@ class _$CheckConnection implements CheckConnection {
     TResult Function()? fetchMovie,
     TResult Function(String query)? queryChanged,
     TResult Function()? checkConnection,
+    TResult Function()? sortMovie,
+    TResult Function()? sortButtonClicked,
   }) {
     return checkConnection?.call();
   }
@@ -546,6 +606,8 @@ class _$CheckConnection implements CheckConnection {
     TResult Function()? fetchMovie,
     TResult Function(String query)? queryChanged,
     TResult Function()? checkConnection,
+    TResult Function()? sortMovie,
+    TResult Function()? sortButtonClicked,
     required TResult orElse(),
   }) {
     if (checkConnection != null) {
@@ -560,7 +622,9 @@ class _$CheckConnection implements CheckConnection {
     required TResult Function(_Started value) started,
     required TResult Function(_FetchMovie value) fetchMovie,
     required TResult Function(_QueryChanged value) queryChanged,
-    required TResult Function(CheckConnection value) checkConnection,
+    required TResult Function(_CheckConnection value) checkConnection,
+    required TResult Function(_SortMovie value) sortMovie,
+    required TResult Function(_SortButtonClicked value) sortButtonClicked,
   }) {
     return checkConnection(this);
   }
@@ -571,7 +635,9 @@ class _$CheckConnection implements CheckConnection {
     TResult Function(_Started value)? started,
     TResult Function(_FetchMovie value)? fetchMovie,
     TResult Function(_QueryChanged value)? queryChanged,
-    TResult Function(CheckConnection value)? checkConnection,
+    TResult Function(_CheckConnection value)? checkConnection,
+    TResult Function(_SortMovie value)? sortMovie,
+    TResult Function(_SortButtonClicked value)? sortButtonClicked,
   }) {
     return checkConnection?.call(this);
   }
@@ -582,7 +648,9 @@ class _$CheckConnection implements CheckConnection {
     TResult Function(_Started value)? started,
     TResult Function(_FetchMovie value)? fetchMovie,
     TResult Function(_QueryChanged value)? queryChanged,
-    TResult Function(CheckConnection value)? checkConnection,
+    TResult Function(_CheckConnection value)? checkConnection,
+    TResult Function(_SortMovie value)? sortMovie,
+    TResult Function(_SortButtonClicked value)? sortButtonClicked,
     required TResult orElse(),
   }) {
     if (checkConnection != null) {
@@ -592,8 +660,262 @@ class _$CheckConnection implements CheckConnection {
   }
 }
 
-abstract class CheckConnection implements HomeEvent {
-  const factory CheckConnection() = _$CheckConnection;
+abstract class _CheckConnection implements HomeEvent {
+  const factory _CheckConnection() = _$_CheckConnection;
+}
+
+/// @nodoc
+abstract class _$SortMovieCopyWith<$Res> {
+  factory _$SortMovieCopyWith(
+          _SortMovie value, $Res Function(_SortMovie) then) =
+      __$SortMovieCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$SortMovieCopyWithImpl<$Res> extends _$HomeEventCopyWithImpl<$Res>
+    implements _$SortMovieCopyWith<$Res> {
+  __$SortMovieCopyWithImpl(_SortMovie _value, $Res Function(_SortMovie) _then)
+      : super(_value, (v) => _then(v as _SortMovie));
+
+  @override
+  _SortMovie get _value => super._value as _SortMovie;
+}
+
+/// @nodoc
+
+class _$_SortMovie implements _SortMovie {
+  const _$_SortMovie();
+
+  @override
+  String toString() {
+    return 'HomeEvent.sortMovie()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) || (other is _SortMovie);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() started,
+    required TResult Function() fetchMovie,
+    required TResult Function(String query) queryChanged,
+    required TResult Function() checkConnection,
+    required TResult Function() sortMovie,
+    required TResult Function() sortButtonClicked,
+  }) {
+    return sortMovie();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? started,
+    TResult Function()? fetchMovie,
+    TResult Function(String query)? queryChanged,
+    TResult Function()? checkConnection,
+    TResult Function()? sortMovie,
+    TResult Function()? sortButtonClicked,
+  }) {
+    return sortMovie?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? started,
+    TResult Function()? fetchMovie,
+    TResult Function(String query)? queryChanged,
+    TResult Function()? checkConnection,
+    TResult Function()? sortMovie,
+    TResult Function()? sortButtonClicked,
+    required TResult orElse(),
+  }) {
+    if (sortMovie != null) {
+      return sortMovie();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Started value) started,
+    required TResult Function(_FetchMovie value) fetchMovie,
+    required TResult Function(_QueryChanged value) queryChanged,
+    required TResult Function(_CheckConnection value) checkConnection,
+    required TResult Function(_SortMovie value) sortMovie,
+    required TResult Function(_SortButtonClicked value) sortButtonClicked,
+  }) {
+    return sortMovie(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_Started value)? started,
+    TResult Function(_FetchMovie value)? fetchMovie,
+    TResult Function(_QueryChanged value)? queryChanged,
+    TResult Function(_CheckConnection value)? checkConnection,
+    TResult Function(_SortMovie value)? sortMovie,
+    TResult Function(_SortButtonClicked value)? sortButtonClicked,
+  }) {
+    return sortMovie?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Started value)? started,
+    TResult Function(_FetchMovie value)? fetchMovie,
+    TResult Function(_QueryChanged value)? queryChanged,
+    TResult Function(_CheckConnection value)? checkConnection,
+    TResult Function(_SortMovie value)? sortMovie,
+    TResult Function(_SortButtonClicked value)? sortButtonClicked,
+    required TResult orElse(),
+  }) {
+    if (sortMovie != null) {
+      return sortMovie(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _SortMovie implements HomeEvent {
+  const factory _SortMovie() = _$_SortMovie;
+}
+
+/// @nodoc
+abstract class _$SortButtonClickedCopyWith<$Res> {
+  factory _$SortButtonClickedCopyWith(
+          _SortButtonClicked value, $Res Function(_SortButtonClicked) then) =
+      __$SortButtonClickedCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$SortButtonClickedCopyWithImpl<$Res>
+    extends _$HomeEventCopyWithImpl<$Res>
+    implements _$SortButtonClickedCopyWith<$Res> {
+  __$SortButtonClickedCopyWithImpl(
+      _SortButtonClicked _value, $Res Function(_SortButtonClicked) _then)
+      : super(_value, (v) => _then(v as _SortButtonClicked));
+
+  @override
+  _SortButtonClicked get _value => super._value as _SortButtonClicked;
+}
+
+/// @nodoc
+
+class _$_SortButtonClicked implements _SortButtonClicked {
+  const _$_SortButtonClicked();
+
+  @override
+  String toString() {
+    return 'HomeEvent.sortButtonClicked()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) || (other is _SortButtonClicked);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() started,
+    required TResult Function() fetchMovie,
+    required TResult Function(String query) queryChanged,
+    required TResult Function() checkConnection,
+    required TResult Function() sortMovie,
+    required TResult Function() sortButtonClicked,
+  }) {
+    return sortButtonClicked();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? started,
+    TResult Function()? fetchMovie,
+    TResult Function(String query)? queryChanged,
+    TResult Function()? checkConnection,
+    TResult Function()? sortMovie,
+    TResult Function()? sortButtonClicked,
+  }) {
+    return sortButtonClicked?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? started,
+    TResult Function()? fetchMovie,
+    TResult Function(String query)? queryChanged,
+    TResult Function()? checkConnection,
+    TResult Function()? sortMovie,
+    TResult Function()? sortButtonClicked,
+    required TResult orElse(),
+  }) {
+    if (sortButtonClicked != null) {
+      return sortButtonClicked();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Started value) started,
+    required TResult Function(_FetchMovie value) fetchMovie,
+    required TResult Function(_QueryChanged value) queryChanged,
+    required TResult Function(_CheckConnection value) checkConnection,
+    required TResult Function(_SortMovie value) sortMovie,
+    required TResult Function(_SortButtonClicked value) sortButtonClicked,
+  }) {
+    return sortButtonClicked(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_Started value)? started,
+    TResult Function(_FetchMovie value)? fetchMovie,
+    TResult Function(_QueryChanged value)? queryChanged,
+    TResult Function(_CheckConnection value)? checkConnection,
+    TResult Function(_SortMovie value)? sortMovie,
+    TResult Function(_SortButtonClicked value)? sortButtonClicked,
+  }) {
+    return sortButtonClicked?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Started value)? started,
+    TResult Function(_FetchMovie value)? fetchMovie,
+    TResult Function(_QueryChanged value)? queryChanged,
+    TResult Function(_CheckConnection value)? checkConnection,
+    TResult Function(_SortMovie value)? sortMovie,
+    TResult Function(_SortButtonClicked value)? sortButtonClicked,
+    required TResult orElse(),
+  }) {
+    if (sortButtonClicked != null) {
+      return sortButtonClicked(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _SortButtonClicked implements HomeEvent {
+  const factory _SortButtonClicked() = _$_SortButtonClicked;
 }
 
 /// @nodoc
@@ -605,6 +927,8 @@ class _$HomeStateTearOff {
       dynamic isLoading = false,
       dynamic errorText = '',
       dynamic query = '',
+      dynamic sortValue = 0,
+      dynamic sortButtonClicked = false,
       dynamic isConnected = true,
       dynamic startFetching = false}) {
     return _HomeState(
@@ -612,6 +936,8 @@ class _$HomeStateTearOff {
       isLoading: isLoading,
       errorText: errorText,
       query: query,
+      sortValue: sortValue,
+      sortButtonClicked: sortButtonClicked,
       isConnected: isConnected,
       startFetching: startFetching,
     );
@@ -627,6 +953,8 @@ mixin _$HomeState {
   dynamic get isLoading => throw _privateConstructorUsedError;
   dynamic get errorText => throw _privateConstructorUsedError;
   dynamic get query => throw _privateConstructorUsedError;
+  dynamic get sortValue => throw _privateConstructorUsedError;
+  dynamic get sortButtonClicked => throw _privateConstructorUsedError;
   dynamic get isConnected => throw _privateConstructorUsedError;
   dynamic get startFetching => throw _privateConstructorUsedError;
 
@@ -644,6 +972,8 @@ abstract class $HomeStateCopyWith<$Res> {
       dynamic isLoading,
       dynamic errorText,
       dynamic query,
+      dynamic sortValue,
+      dynamic sortButtonClicked,
       dynamic isConnected,
       dynamic startFetching});
 }
@@ -662,6 +992,8 @@ class _$HomeStateCopyWithImpl<$Res> implements $HomeStateCopyWith<$Res> {
     Object? isLoading = freezed,
     Object? errorText = freezed,
     Object? query = freezed,
+    Object? sortValue = freezed,
+    Object? sortButtonClicked = freezed,
     Object? isConnected = freezed,
     Object? startFetching = freezed,
   }) {
@@ -681,6 +1013,14 @@ class _$HomeStateCopyWithImpl<$Res> implements $HomeStateCopyWith<$Res> {
       query: query == freezed
           ? _value.query
           : query // ignore: cast_nullable_to_non_nullable
+              as dynamic,
+      sortValue: sortValue == freezed
+          ? _value.sortValue
+          : sortValue // ignore: cast_nullable_to_non_nullable
+              as dynamic,
+      sortButtonClicked: sortButtonClicked == freezed
+          ? _value.sortButtonClicked
+          : sortButtonClicked // ignore: cast_nullable_to_non_nullable
               as dynamic,
       isConnected: isConnected == freezed
           ? _value.isConnected
@@ -705,6 +1045,8 @@ abstract class _$HomeStateCopyWith<$Res> implements $HomeStateCopyWith<$Res> {
       dynamic isLoading,
       dynamic errorText,
       dynamic query,
+      dynamic sortValue,
+      dynamic sortButtonClicked,
       dynamic isConnected,
       dynamic startFetching});
 }
@@ -724,6 +1066,8 @@ class __$HomeStateCopyWithImpl<$Res> extends _$HomeStateCopyWithImpl<$Res>
     Object? isLoading = freezed,
     Object? errorText = freezed,
     Object? query = freezed,
+    Object? sortValue = freezed,
+    Object? sortButtonClicked = freezed,
     Object? isConnected = freezed,
     Object? startFetching = freezed,
   }) {
@@ -735,6 +1079,10 @@ class __$HomeStateCopyWithImpl<$Res> extends _$HomeStateCopyWithImpl<$Res>
       isLoading: isLoading == freezed ? _value.isLoading : isLoading,
       errorText: errorText == freezed ? _value.errorText : errorText,
       query: query == freezed ? _value.query : query,
+      sortValue: sortValue == freezed ? _value.sortValue : sortValue,
+      sortButtonClicked: sortButtonClicked == freezed
+          ? _value.sortButtonClicked
+          : sortButtonClicked,
       isConnected: isConnected == freezed ? _value.isConnected : isConnected,
       startFetching:
           startFetching == freezed ? _value.startFetching : startFetching,
@@ -750,6 +1098,8 @@ class _$_HomeState implements _HomeState {
       this.isLoading = false,
       this.errorText = '',
       this.query = '',
+      this.sortValue = 0,
+      this.sortButtonClicked = false,
       this.isConnected = true,
       this.startFetching = false});
 
@@ -764,6 +1114,12 @@ class _$_HomeState implements _HomeState {
   @JsonKey(defaultValue: '')
   @override
   final dynamic query;
+  @JsonKey(defaultValue: 0)
+  @override
+  final dynamic sortValue;
+  @JsonKey(defaultValue: false)
+  @override
+  final dynamic sortButtonClicked;
   @JsonKey(defaultValue: true)
   @override
   final dynamic isConnected;
@@ -773,7 +1129,7 @@ class _$_HomeState implements _HomeState {
 
   @override
   String toString() {
-    return 'HomeState(movieModel: $movieModel, isLoading: $isLoading, errorText: $errorText, query: $query, isConnected: $isConnected, startFetching: $startFetching)';
+    return 'HomeState(movieModel: $movieModel, isLoading: $isLoading, errorText: $errorText, query: $query, sortValue: $sortValue, sortButtonClicked: $sortButtonClicked, isConnected: $isConnected, startFetching: $startFetching)';
   }
 
   @override
@@ -791,6 +1147,12 @@ class _$_HomeState implements _HomeState {
                     .equals(other.errorText, errorText)) &&
             (identical(other.query, query) ||
                 const DeepCollectionEquality().equals(other.query, query)) &&
+            (identical(other.sortValue, sortValue) ||
+                const DeepCollectionEquality()
+                    .equals(other.sortValue, sortValue)) &&
+            (identical(other.sortButtonClicked, sortButtonClicked) ||
+                const DeepCollectionEquality()
+                    .equals(other.sortButtonClicked, sortButtonClicked)) &&
             (identical(other.isConnected, isConnected) ||
                 const DeepCollectionEquality()
                     .equals(other.isConnected, isConnected)) &&
@@ -806,6 +1168,8 @@ class _$_HomeState implements _HomeState {
       const DeepCollectionEquality().hash(isLoading) ^
       const DeepCollectionEquality().hash(errorText) ^
       const DeepCollectionEquality().hash(query) ^
+      const DeepCollectionEquality().hash(sortValue) ^
+      const DeepCollectionEquality().hash(sortButtonClicked) ^
       const DeepCollectionEquality().hash(isConnected) ^
       const DeepCollectionEquality().hash(startFetching);
 
@@ -821,6 +1185,8 @@ abstract class _HomeState implements HomeState {
       dynamic isLoading,
       dynamic errorText,
       dynamic query,
+      dynamic sortValue,
+      dynamic sortButtonClicked,
       dynamic isConnected,
       dynamic startFetching}) = _$_HomeState;
 
@@ -832,6 +1198,10 @@ abstract class _HomeState implements HomeState {
   dynamic get errorText => throw _privateConstructorUsedError;
   @override
   dynamic get query => throw _privateConstructorUsedError;
+  @override
+  dynamic get sortValue => throw _privateConstructorUsedError;
+  @override
+  dynamic get sortButtonClicked => throw _privateConstructorUsedError;
   @override
   dynamic get isConnected => throw _privateConstructorUsedError;
   @override

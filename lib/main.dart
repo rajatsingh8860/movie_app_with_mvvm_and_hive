@@ -18,15 +18,12 @@ Future<void> main() async {
     await Hive.initFlutter();
     Hive.registerAdapter(MovieModelAdapter());
 
-    
-
     SystemChrome.setPreferredOrientations([
       DeviceOrientation.portraitUp,
       DeviceOrientation.portraitDown,
     ]);
     runApp(const App());
     await initFirebase();
-   
   }, (error, stack) => FirebaseCrashlytics.instance.recordError(error, stack));
 }
 
@@ -49,5 +46,3 @@ Future<void> initFirebase() async {
 
   await initCrashlytics();
 }
-
-
