@@ -21,6 +21,7 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
         var result = await homeRepository.getMovieFeed();
 
         result.sort((a, b) => a.title!.compareTo(b.title!));
+        box.put("movies", result);
 
         emit(state.copyWith(
             movieModel: result, isLoading: false, startFetching: false));

@@ -53,7 +53,8 @@ class HomePage extends StatelessWidget {
                     p.title!.toLowerCase().contains(state.query.toLowerCase()))
                 .toList();
 
-            return !state.isConnected
+
+            return !state.isConnected && searchedMovieModel.isEmpty
                 ? Center(
                     child: ElevatedButton(
                         onPressed: () {

@@ -2,7 +2,7 @@ part of 'home_bloc.dart';
 
 @freezed
 class HomeState with _$HomeState {
-  const factory HomeState(
+  factory HomeState(
       {required List<MovieModel> movieModel,
       @Default(false) isLoading,
       @Default('') errorText,
@@ -12,12 +12,12 @@ class HomeState with _$HomeState {
       @Default(true) isConnected,
       @Default(false) startFetching}) = _HomeState;
 
-  factory HomeState.initial() => const HomeState(
+  factory HomeState.initial() => HomeState(
       movieModel: [],
       isLoading: false,
       errorText: '',
-     sortValue: 0,
-     sortButtonClicked: false,
+      sortValue: 0,
+      sortButtonClicked: false,
       query: '',
       isConnected: true,
       startFetching: false);
